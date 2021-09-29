@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Hyperspace by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Diego Aranda</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="Project_1.html" class="active">Projects</a></li>
+					<!--<li><a href="elements.html">Elements</a></li>-->
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Machine learning based cyberattack detection</h1>
+							<p>There were two tasks in this project: Task I aimed to develop our skills in applying unsupervised machine learning techniques for anomaly detection; and Task II helped us to better understand how to use gradient descent-based method to generate adversarial samples against supervised learning models beyond the computer vision domain. Specifically, two network traffic (NetFlow) datasets were provided, one for each task. Both datasets contained botnet traffic and normal traffic. We identified botnet IP addresses from both datasets. In addition, for Task II we also chose a botnet IP address, and explained how to manipulate its network traffic in order to bypass detection.</p>
+							<p>A full version of our report can be found here: <a href="https://github.com/darandavilla/Project-2-COMP90073-Machine-learning-based-cyberattack-detection/blob/main/Assignment%202%20COMP90073_992038_DAAV.pdf">Report</a>. If you want to check the code, you can go here: <a href="https://github.com/darandavilla/Project-2-COMP90073-Machine-learning-based-cyberattack-detection">Code</a>.</p>
+							<p>Data was ingested into Splunk for having an overview of IPs interactions and bytes transferred, as it can be seen in the following graphs:</p>
+							<span class="image fit"><img src="images/Cyberattack1.jpeg" alt="" /></span>
+							<p>Then, the following features were extracted for analysis:</p>
+							<span class="image fit"><img src="images/Cyberattack2.jpeg" alt="" /></span>
+							<p>Once the features were extracted, we used iForest and LOF models to perform the anomaly detection task in three scenarios: with all the features, using Principal Components Analysis and using Variance Threshold. After running the experiments, it was found that iForest worked better as LOF tended to capture much more noise. We consider for the iForest model to be the more accurate as it produces a reduced amount of src_ip and dst_ip, and contains all the top conversations, src_ip and dst_ip from our overview analysis. A list of 79 attackers and 101 victims was found. 27,174 records were tagged as anomalous, and the majority of the attacks were considered as ICMP based DDoS, which started at 2:48:22 PM and ended by 6:51:44 PM on 10/12/2012.</p>
+							<span class="image fit"><img src="images/Cyberattack3.jpeg" alt="" /></span>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Diego Aranda. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

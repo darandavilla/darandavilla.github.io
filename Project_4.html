@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Hyperspace by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Diego Aranda</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="Project_4.html" class="active">Projects</a></li>
+					<!--<li><a href="elements.html">Elements</a></li>-->
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Power BI Project 1: Adventure Works</h1>
+							<p>This project represents an analysis for Adventure Works, a company that sells bikes, clothing and accessories related to this sport. The report contains an Executive Summary to show the revenues, orders and returns behaviour over time, a Product Detail analysis to check if orders and revenue have been complying with the targets over time, and a Customer Detail analysis to check customers’ main features behaviour.</p>
+							<p>We first imported 8 CSV databases to create the tables in the data model:</p>
+							<p>- AW_Sales<br />
+							- AW_Returns<br />
+							- AW_Customer_Lookup<br />
+							- AW_Calendar_Lookup<br />
+							- AW_Territories_Lookup<br />
+							- AW_Product_Category_Lookup<br />
+							- AW_Product_Subcategory_Lookup</p>
+							<p>After that, we developed the following data model by creating relationships between the tables:</p>
+							<span class="image fit"><img src="images/AW_Data_Model.JPG" alt="" /></span>
+							<p>We also created the following DAX measures and calculated columns to add more layers of analysis to our report. These are some of the measures created:</p>
+							<p>- Time: Day of week, Birth year, Current age<br />
+							- Logical/Conditional: Parent, Weekend, Customer priority, Price point<br />
+							- Text: Full name, Short month, Short day, SKU category<br />
+							- Math/Stats: Quantity returned, Return rate<br />
+							- Count: Total returns, Total orders<br />
+							- Calculate: Weekend orders, All orders, % of All orders, Overall average price, High ticket orders<br />
+							- Iterators: Total Revenue, Retail price<br />
+							- Time intelligence: Year to date revenue, Previous month revenue, 10-day rolling revenue</p>
+							<p>Then, we created the Executive Summary view, which contains the following visuals. We decided to have a balance between highly detailed bar charts and matrices, alongside with KPIs to draw attention to key business metrics as well as purely visual designs:</p>
+							<p>- Total orders by subcategory (Bar chart)<br />
+							- Total orders by category (Treemap)<br />
+							- Product details including total orders and Return rate (Matrix)<br />
+							- Slicer for choosing time periods<br />
+							- Slicer for choosing regions<br />
+							- Monthly revenue KPI<br />
+							- Monthly orders KPI<br />
+							- Monthly returns KPI<br />
+							- A map for showing each region sales magnitudes<br />
+							- Top product by orders/profits (Card)</p>
+							<span class="image fit"><img src="images/AW1.JPG" alt="" /></span>
+							<p>Next, we created a Product Detail view to dive up into product performance. This dashboard enables the ability to individual product performance, track measures like order volume against targets, see how revenue has passed over time, understand forecasted future profits, and the impact various price adjustments would have on profits:</p>
+							<p>- Weekly profit (Line chart and Forecast with confidence interval)<br />
+							- Weekly return (Line chart)<br />
+							- Current month orders vs target (Gauge)<br />
+							- Current month revenue vs target (Gauge)<br />
+							- Current return vs previous month (Gauge)<br />
+							- Slicer for Price adjustment<br />
+							- Multicard for Average price vs Adjusted price</p>
+							<span class="image fit"><img src="images/AW2.JPG" alt="" /></span>
+							<p>Finally, we developed a Customer Detail to have an aggregated view on customers’ basic features behaviour, and to have the ability to drill down into each customer features:</p>
+							<p>- Customer details including Total orders and Total revenue (Matrix)<br />
+							- Orders by gender (Donut chart)<br />
+							- Orders by Income level (Donut chart)<br />
+							- Orders by occupation (Donut chart)<br />
+							- Orders and Revenue by month (Line and clustered column chart)<br />
+							- Orders by current age (Treemap)<br />
+							- Top customer (Card)<br />
+							- Customer orders (Card)<br />
+							- Customer revenue (Card)</p>
+							<span class="image fit"><img src="images/AW3.JPG" alt="" /></span>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Diego Aranda. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
